@@ -7,6 +7,7 @@
 //
 
 #import "TEST_ButtonViewController.h"
+#import "UIButton+LXMImagePosition.h"
 
 @interface TEST_ButtonViewController ()
 
@@ -41,8 +42,7 @@
     self.oneButton.imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth, 0, -labelWidth);
     self.oneButton.titleEdgeInsets = UIEdgeInsetsMake(0, -imageWith, 0, imageWith);
     
-    self.oneButton_line.imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth, 0, -labelWidth);
-    self.oneButton_line.titleEdgeInsets = UIEdgeInsetsMake(0, -imageWith, 0, imageWith);
+    [self.oneButton_line setImagePosition:LXMImagePositionRight spacing:10];
     
     //image在上，文字在下
     CGFloat imageOffsetX = (imageWith + labelWidth) / 2 - imageWith / 2;//image中心移动的x距离
@@ -53,21 +53,26 @@
     self.twoButton.imageEdgeInsets = UIEdgeInsetsMake(-imageOffsetY, imageOffsetX, imageOffsetY, -imageOffsetX);
     self.twoButton.titleEdgeInsets = UIEdgeInsetsMake(labelOffsetY, -labelOffsetX, -labelOffsetY, labelOffsetX);
     
-    self.twoButton_line.imageEdgeInsets = UIEdgeInsetsMake(-imageOffsetY, imageOffsetX, imageOffsetY, -imageOffsetX);
-    self.twoButton_line.titleEdgeInsets = UIEdgeInsetsMake(labelOffsetY, -labelOffsetX, -labelOffsetY, labelOffsetX);
+    [self.twoButton_line setImagePosition:LXMImagePositionTop spacing:10];
     
     
     //image，label中间间隔10
     self.threeButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.threeButton.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+    self.threeButton.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);//注意看显示，label因为大小不够文字显示不全了，如果button大小更大的话这样写也没有问题
     
-    self.threeButton_line.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.threeButton_line.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+    [self.threeButton_line setImagePosition:LXMImagePositionLeft spacing:10];//这样文字图片都能正常显示，但是button大小没有变化
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    
+    
 }
 
 - (void)setupDefault {
