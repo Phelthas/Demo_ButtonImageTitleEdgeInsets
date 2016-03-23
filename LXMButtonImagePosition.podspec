@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LXMButtonImagePosition"
-  s.version      = "0.0.1"
+  s.version      = “1.0.0”
   s.summary      = "利用UIButton的titleEdgeInsets和imageEdgeInsets来实现文字和图片的自由排列的方法”
 
   s.description  = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, “7.1”
 
-  s.source       = { :git => "https://github.com/Phelthas/Demo_ButtonImageTitleEdgeInsets.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/Phelthas/Demo_ButtonImageTitleEdgeInsets.git", :tag => "1.0.0" }
 
   s.source_files  = "LXMButtonImagePosition/*"
   # s.exclude_files = "Classes/Exclude"
