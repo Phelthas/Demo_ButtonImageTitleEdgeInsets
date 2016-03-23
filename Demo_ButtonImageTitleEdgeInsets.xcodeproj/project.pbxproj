@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		436EFA011C48999C000C9946 /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 436EFA001C48999C000C9946 /* UIButton+LXMImagePosition.m */; };
+		435C9DDE1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 435C9DDD1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m */; };
 		43AE1EEE1AE948630031A3D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AE1EED1AE948630031A3D6 /* main.m */; };
 		43AE1EF11AE948630031A3D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AE1EF01AE948630031A3D6 /* AppDelegate.m */; };
 		43AE1EF71AE948630031A3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AE1EF51AE948630031A3D6 /* Main.storyboard */; };
@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		436EF9FF1C48999C000C9946 /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
-		436EFA001C48999C000C9946 /* UIButton+LXMImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXMImagePosition.m"; sourceTree = "<group>"; };
+		435C9DDC1CA2E7EE008A1753 /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
+		435C9DDD1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXMImagePosition.m"; sourceTree = "<group>"; };
 		43AE1EE81AE948630031A3D6 /* Demo_ButtonImageTitleEdgeInsets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_ButtonImageTitleEdgeInsets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AE1EEC1AE948630031A3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43AE1EED1AE948630031A3D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		435C9DDB1CA2E7EE008A1753 /* LXMButtonImagePosition */ = {
+			isa = PBXGroup;
+			children = (
+				435C9DDC1CA2E7EE008A1753 /* UIButton+LXMImagePosition.h */,
+				435C9DDD1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m */,
+			);
+			path = LXMButtonImagePosition;
+			sourceTree = "<group>";
+		};
 		43AE1EDF1AE948630031A3D6 = {
 			isa = PBXGroup;
 			children = (
@@ -84,12 +93,11 @@
 		43AE1EEA1AE948630031A3D6 /* Demo_ButtonImageTitleEdgeInsets */ = {
 			isa = PBXGroup;
 			children = (
+				435C9DDB1CA2E7EE008A1753 /* LXMButtonImagePosition */,
 				43AE1EEF1AE948630031A3D6 /* AppDelegate.h */,
 				43AE1EF01AE948630031A3D6 /* AppDelegate.m */,
 				43AE1F111AE948C50031A3D6 /* TEST_ButtonViewController.h */,
 				43AE1F121AE948C50031A3D6 /* TEST_ButtonViewController.m */,
-				436EF9FF1C48999C000C9946 /* UIButton+LXMImagePosition.h */,
-				436EFA001C48999C000C9946 /* UIButton+LXMImagePosition.m */,
 				43AE1EF51AE948630031A3D6 /* Main.storyboard */,
 				43AE1EF81AE948630031A3D6 /* Images.xcassets */,
 				43AE1EFA1AE948630031A3D6 /* LaunchScreen.xib */,
@@ -226,7 +234,7 @@
 			files = (
 				43AE1EF11AE948630031A3D6 /* AppDelegate.m in Sources */,
 				43AE1F131AE948C50031A3D6 /* TEST_ButtonViewController.m in Sources */,
-				436EFA011C48999C000C9946 /* UIButton+LXMImagePosition.m in Sources */,
+				435C9DDE1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m in Sources */,
 				43AE1EEE1AE948630031A3D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
