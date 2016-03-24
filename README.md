@@ -6,7 +6,19 @@
 
 
 发现这个功能还挺常用的，每次都抄一遍也不方便，所以就封装为button的一个分类方法，只需一行代码就可以搞定~    
-`[self.twoButton_line setImagePosition:LXMImagePositionTop spacing:10]; `         
+`[self.twoButton_line setImagePosition:LXMImagePositionTop spacing:10]; `       
+
+
+## 支持 CocoaPods    
+现在可以用CocoaPods按安装了
+在你的podfile中添加    
+`pod 'LXMButtonImagePosition', '~> 1.0.0'`    
+然后在需要用的地方引入头文件    
+`#import <UIButton+LXMImagePosition.h>`  
+
+
+## License
+LXMButtonImagePosition is provided under the MIT license. See LICENSE file for details.
 
 
 
