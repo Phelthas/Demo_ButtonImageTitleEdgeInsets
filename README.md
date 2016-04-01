@@ -1,7 +1,7 @@
 # Demo_ButtonImageTitleEdgeInsets
 用button的titleEdgeInsets和 imageEdgeInsets属性来实现button文字图片上下或者左右排列的demo
 
-![image](https://raw.githubusercontent.com/Phelthas/Demo_ButtonImageTitleEdgeInsets/master/Screenshots/screenshot1.png)    
+![image](https://raw.githubusercontent.com/Phelthas/Demo_ButtonImageTitleEdgeInsets/master/Screenshots/screenshot2.png)    
 [这里](http://www.cnblogs.com/Phelthas/p/4452235.html)有一篇总结    
 
 
@@ -12,9 +12,14 @@
 ## 支持 CocoaPods    
 现在可以用CocoaPods按安装了
 在你的podfile中添加    
-`pod 'LXMButtonImagePosition', '~> 1.0.0'`    
+`pod 'LXMButtonImagePosition', '~> 1.1.0'`    
 然后在需要用的地方引入头文件    
 `#import <UIButton+LXMImagePosition.h>`  
+
+
+## Update
+1.1.0     
+加入对contentInset的考虑，使button的intrinsicSize计算正确，更好的配合autoLayout
 
 
 ## License

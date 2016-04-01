@@ -13,6 +13,9 @@
 - (void)setImagePosition:(LXMImagePosition)postion spacing:(CGFloat)spacing {
     CGFloat buttonWidth = CGRectGetWidth(self.bounds);
     CGFloat buttonHeight = CGRectGetHeight(self.bounds);
+    [self setTitle:self.currentTitle forState:UIControlStateNormal];
+    [self setImage:self.currentImage forState:UIControlStateNormal];
+
     
     CGFloat imageWidth = self.imageView.image.size.width;
     CGFloat imageHeight = self.imageView.image.size.height;
@@ -34,12 +37,16 @@
     
     
     
-    
+    CGFloat tempWidth = MAX(labelWidth, imageWidth);
+    CGFloat changedWidth = labelWidth + imageWidth - tempWidth;
+    CGFloat tempHeight = MAX(labelHeight, imageHeight);
+    CGFloat changedHeight = labelHeight + imageHeight + spacing - tempHeight;
     
     switch (postion) {
         case LXMImagePositionLeft:
             self.imageEdgeInsets = UIEdgeInsetsMake(0, -spacing/2, 0, spacing/2);
             self.titleEdgeInsets = UIEdgeInsetsMake(0, spacing/2, 0, -spacing/2);
+            self.contentEdgeInsets = UIEdgeInsetsMake(0, spacing/2, 0, spacing/2);
             break;
             
         case LXMImagePositionRight:
@@ -75,17 +82,20 @@
             
             
             self.imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth + spacing/2, 0, -(labelWidth + spacing/2));
-            self.titleEdgeInsets = UIEdgeInsetsMake(0, -(imageHeight + spacing/2), 0, imageHeight + spacing/2);
+            self.titleEdgeInsets = UIEdgeInsetsMake(0, -(imageWidth + spacing/2), 0, imageWidth + spacing/2);
+            self.contentEdgeInsets = UIEdgeInsetsMake(0, spacing/2, 0, spacing/2);
             break;
             
         case LXMImagePositionTop:
             self.imageEdgeInsets = UIEdgeInsetsMake(-imageOffsetY, imageOffsetX, imageOffsetY, -imageOffsetX);
             self.titleEdgeInsets = UIEdgeInsetsMake(labelOffsetY, -labelOffsetX, -labelOffsetY, labelOffsetX);
+            self.contentEdgeInsets = UIEdgeInsetsMake(imageOffsetY, -changedWidth/2, changedHeight-imageOffsetY, -changedWidth/2);
             break;
             
         case LXMImagePositionBottom:
             self.imageEdgeInsets = UIEdgeInsetsMake(imageOffsetY, imageOffsetX, -imageOffsetY, -imageOffsetX);
             self.titleEdgeInsets = UIEdgeInsetsMake(-labelOffsetY, -labelOffsetX, labelOffsetY, labelOffsetX);
+            self.contentEdgeInsets = UIEdgeInsetsMake(changedHeight-imageOffsetY, -changedWidth/2, imageOffsetY, -changedWidth/2);
             break;
             
         default:
@@ -93,5 +103,6 @@
     }
     
 }
+
 
 @end

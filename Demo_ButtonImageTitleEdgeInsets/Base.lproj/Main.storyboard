@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SKw-w7-JCP">
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MrX-Lg-SVz">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -17,75 +18,163 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9s-RS-fcl">
-                                <rect key="frame" x="16" y="113" width="135" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9s-RS-fcl">
+                                <rect key="frame" x="20" y="94" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="表现不错赞一个" image="like">
+                                <state key="normal" title="赞一个" image="like">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-si-W3A">
-                                <rect key="frame" x="16" y="190" width="135" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyH-qS-fnD">
+                                <rect key="frame" x="123" y="94" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="表现不错赞一个" image="like">
+                                <state key="normal" title="赞一个" image="like">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxt-F9-ITn">
-                                <rect key="frame" x="16" y="287" width="135" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmX-JV-8WU">
+                                <rect key="frame" x="225" y="94" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="表现不错赞一个" image="like">
+                                <state key="normal" title="赞一个" image="like">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn8-sZ-2tb">
-                                <rect key="frame" x="16" y="373" width="135" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YK-gn-UUV">
+                                <rect key="frame" x="20" y="149" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="表现不错赞一个" image="like">
+                                <state key="normal" title="赞一个" image="like">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-fP-UVM">
-                                <rect key="frame" x="169" y="113" width="135" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tco-wx-png">
+                                <rect key="frame" x="123" y="149" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="表现不错赞一个" image="like">
+                                <state key="normal" title="赞一个" image="like">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKJ-98-9XN">
-                                <rect key="frame" x="169" y="190" width="135" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81O-kd-yNx">
+                                <rect key="frame" x="225" y="149" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="表现不错赞一个" image="like">
+                                <state key="normal" title="赞一个" image="like">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WB4-uJ-PBB">
-                                <rect key="frame" x="169" y="287" width="135" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iV6-E8-3ub">
+                                <rect key="frame" x="20" y="204" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="表现不错赞一个" image="like">
+                                <state key="normal" title="赞一个" image="like">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAi-b5-wOU">
-                                <rect key="frame" x="169" y="373" width="135" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic5-OZ-glC">
+                                <rect key="frame" x="123" y="204" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="表现不错赞一个" image="like">
+                                <state key="normal" title="赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB9-Yb-jmd">
+                                <rect key="frame" x="225" y="204" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS7-zM-IQM">
+                                <rect key="frame" x="20" y="259" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veV-sl-b1T">
+                                <rect key="frame" x="123" y="259" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgA-9t-myX">
+                                <rect key="frame" x="225" y="259" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-1N-dJ0">
+                                <rect key="frame" x="20" y="314" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRK-xg-Ers">
+                                <rect key="frame" x="123" y="314" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX4-L1-79S">
+                                <rect key="frame" x="225" y="314" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="赞一个" image="like">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6YK-gn-UUV" firstAttribute="leading" secondItem="e9s-RS-fcl" secondAttribute="leading" id="2cV-YK-OWE"/>
+                            <constraint firstItem="Tco-wx-png" firstAttribute="centerX" secondItem="QyH-qS-fnD" secondAttribute="centerX" id="5Xe-ZA-8c9"/>
+                            <constraint firstItem="Ic5-OZ-glC" firstAttribute="centerX" secondItem="Tco-wx-png" secondAttribute="centerX" id="6K7-ZM-C82"/>
+                            <constraint firstItem="5CP-1N-dJ0" firstAttribute="top" secondItem="SS7-zM-IQM" secondAttribute="bottom" constant="25" id="9lu-zB-Qzc"/>
+                            <constraint firstAttribute="trailing" secondItem="YmX-JV-8WU" secondAttribute="trailing" constant="20" id="AUn-c2-acx"/>
+                            <constraint firstItem="iV6-E8-3ub" firstAttribute="leading" secondItem="6YK-gn-UUV" secondAttribute="leading" id="GD7-6f-5Yf"/>
+                            <constraint firstItem="SS7-zM-IQM" firstAttribute="leading" secondItem="iV6-E8-3ub" secondAttribute="leading" id="HRf-X0-gGX"/>
+                            <constraint firstItem="QyH-qS-fnD" firstAttribute="top" secondItem="M3M-hh-LLe" secondAttribute="bottom" constant="30" id="Hc9-sA-8xS"/>
+                            <constraint firstItem="81O-kd-yNx" firstAttribute="top" secondItem="YmX-JV-8WU" secondAttribute="bottom" constant="25" id="I5M-d1-OQe"/>
+                            <constraint firstItem="PRK-xg-Ers" firstAttribute="top" secondItem="veV-sl-b1T" secondAttribute="bottom" constant="25" id="Ixh-dI-re2"/>
+                            <constraint firstItem="aB9-Yb-jmd" firstAttribute="top" secondItem="81O-kd-yNx" secondAttribute="bottom" constant="25" id="MFm-Zw-zxo"/>
+                            <constraint firstItem="81O-kd-yNx" firstAttribute="trailing" secondItem="YmX-JV-8WU" secondAttribute="trailing" id="NpP-QL-HzU"/>
+                            <constraint firstItem="zgA-9t-myX" firstAttribute="top" secondItem="aB9-Yb-jmd" secondAttribute="bottom" constant="25" id="Pi0-Vv-pnk"/>
+                            <constraint firstItem="e9s-RS-fcl" firstAttribute="leading" secondItem="EFj-Kt-imO" secondAttribute="leading" constant="20" id="YLH-Ao-X9S"/>
+                            <constraint firstItem="aB9-Yb-jmd" firstAttribute="trailing" secondItem="81O-kd-yNx" secondAttribute="trailing" id="cai-fC-E9q"/>
+                            <constraint firstItem="e9s-RS-fcl" firstAttribute="centerY" secondItem="QyH-qS-fnD" secondAttribute="centerY" id="f0H-kp-skS"/>
+                            <constraint firstItem="SS7-zM-IQM" firstAttribute="top" secondItem="iV6-E8-3ub" secondAttribute="bottom" constant="25" id="flS-H0-KGW"/>
+                            <constraint firstItem="YmX-JV-8WU" firstAttribute="centerY" secondItem="QyH-qS-fnD" secondAttribute="centerY" id="fu4-ks-3jZ"/>
+                            <constraint firstItem="OX4-L1-79S" firstAttribute="trailing" secondItem="zgA-9t-myX" secondAttribute="trailing" id="h3k-b6-hOj"/>
+                            <constraint firstItem="QyH-qS-fnD" firstAttribute="centerX" secondItem="EFj-Kt-imO" secondAttribute="centerX" id="lWz-3d-d5W"/>
+                            <constraint firstItem="5CP-1N-dJ0" firstAttribute="leading" secondItem="SS7-zM-IQM" secondAttribute="leading" id="la2-8C-Gsv"/>
+                            <constraint firstItem="veV-sl-b1T" firstAttribute="top" secondItem="Ic5-OZ-glC" secondAttribute="bottom" constant="25" id="m6S-bP-Jaf"/>
+                            <constraint firstItem="veV-sl-b1T" firstAttribute="centerX" secondItem="Ic5-OZ-glC" secondAttribute="centerX" id="ooj-bP-oZZ"/>
+                            <constraint firstItem="OX4-L1-79S" firstAttribute="top" secondItem="zgA-9t-myX" secondAttribute="bottom" constant="25" id="tx8-aA-dBh"/>
+                            <constraint firstItem="zgA-9t-myX" firstAttribute="trailing" secondItem="aB9-Yb-jmd" secondAttribute="trailing" id="um7-J7-Cz0"/>
+                            <constraint firstItem="PRK-xg-Ers" firstAttribute="centerX" secondItem="veV-sl-b1T" secondAttribute="centerX" id="uqe-SN-2Wv"/>
+                            <constraint firstItem="6YK-gn-UUV" firstAttribute="top" secondItem="e9s-RS-fcl" secondAttribute="bottom" constant="25" id="uwb-y3-DVg"/>
+                            <constraint firstItem="iV6-E8-3ub" firstAttribute="top" secondItem="6YK-gn-UUV" secondAttribute="bottom" constant="25" id="v5R-RN-1FJ"/>
+                            <constraint firstItem="Ic5-OZ-glC" firstAttribute="top" secondItem="Tco-wx-png" secondAttribute="bottom" constant="25" id="vGz-4j-Yn4"/>
+                            <constraint firstItem="Tco-wx-png" firstAttribute="top" secondItem="QyH-qS-fnD" secondAttribute="bottom" constant="25" id="vdO-P6-Qrc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d5D-A7-cUh"/>
                     <connections>
-                        <outlet property="oneButton" destination="Fuw-si-W3A" id="dVX-JX-sOn"/>
-                        <outlet property="oneButton_line" destination="LKJ-98-9XN" id="64g-6o-Azi"/>
+                        <outlet property="fourButton" destination="5CP-1N-dJ0" id="R7U-3W-Ng8"/>
+                        <outlet property="fourButton_line" destination="PRK-xg-Ers" id="nKA-wY-9WR"/>
+                        <outlet property="fourButton_line_1" destination="OX4-L1-79S" id="edo-fy-amS"/>
+                        <outlet property="oneButton" destination="6YK-gn-UUV" id="lbf-J5-Cea"/>
+                        <outlet property="oneButton_line" destination="Tco-wx-png" id="c4H-7i-r9o"/>
+                        <outlet property="oneButton_line_1" destination="81O-kd-yNx" id="dX7-bZ-e6z"/>
                         <outlet property="originalButton" destination="e9s-RS-fcl" id="ruu-DL-czK"/>
-                        <outlet property="originalButton_line" destination="nRb-fP-UVM" id="drY-5t-Zie"/>
-                        <outlet property="threeButton" destination="kn8-sZ-2tb" id="DtZ-jT-KLV"/>
-                        <outlet property="threeButton_line" destination="hAi-b5-wOU" id="EX5-rS-x1Y"/>
-                        <outlet property="twoButton" destination="Zxt-F9-ITn" id="d1F-gB-bXw"/>
-                        <outlet property="twoButton_line" destination="WB4-uJ-PBB" id="jPQ-Fp-w1Z"/>
+                        <outlet property="originalButton_line" destination="QyH-qS-fnD" id="pYw-9g-h4L"/>
+                        <outlet property="originalButton_line_1" destination="YmX-JV-8WU" id="nfk-UK-TWl"/>
+                        <outlet property="threeButton" destination="SS7-zM-IQM" id="wm9-9W-5qP"/>
+                        <outlet property="threeButton_line" destination="veV-sl-b1T" id="Mm1-Mv-e1K"/>
+                        <outlet property="threeButton_line_1" destination="zgA-9t-myX" id="PVn-dC-3E5"/>
+                        <outlet property="twoButton" destination="iV6-E8-3ub" id="kc3-Dp-MhX"/>
+                        <outlet property="twoButton_line" destination="Ic5-OZ-glC" id="6nD-qp-AZH"/>
+                        <outlet property="twoButton_line_1" destination="aB9-Yb-jmd" id="sFJ-7V-JUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLY-aw-idK" userLabel="First Responder" sceneMemberID="firstResponder"/>
