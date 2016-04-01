@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		435C9DDE1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 435C9DDD1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m */; };
+		435E79E71CA9556B004DE577 /* TEST_TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435E79E61CA9556B004DE577 /* TEST_TwoViewController.m */; };
 		43AE1EEE1AE948630031A3D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AE1EED1AE948630031A3D6 /* main.m */; };
 		43AE1EF11AE948630031A3D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AE1EF01AE948630031A3D6 /* AppDelegate.m */; };
 		43AE1EF71AE948630031A3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AE1EF51AE948630031A3D6 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		435C9DDC1CA2E7EE008A1753 /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
 		435C9DDD1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXMImagePosition.m"; sourceTree = "<group>"; };
+		435E79E51CA9556B004DE577 /* TEST_TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEST_TwoViewController.h; sourceTree = "<group>"; };
+		435E79E61CA9556B004DE577 /* TEST_TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEST_TwoViewController.m; sourceTree = "<group>"; };
 		43AE1EE81AE948630031A3D6 /* Demo_ButtonImageTitleEdgeInsets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_ButtonImageTitleEdgeInsets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AE1EEC1AE948630031A3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43AE1EED1AE948630031A3D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				43AE1EF01AE948630031A3D6 /* AppDelegate.m */,
 				43AE1F111AE948C50031A3D6 /* TEST_ButtonViewController.h */,
 				43AE1F121AE948C50031A3D6 /* TEST_ButtonViewController.m */,
+				435E79E51CA9556B004DE577 /* TEST_TwoViewController.h */,
+				435E79E61CA9556B004DE577 /* TEST_TwoViewController.m */,
 				43AE1EF51AE948630031A3D6 /* Main.storyboard */,
 				43AE1EF81AE948630031A3D6 /* Images.xcassets */,
 				43AE1EFA1AE948630031A3D6 /* LaunchScreen.xib */,
@@ -234,6 +239,7 @@
 			files = (
 				43AE1EF11AE948630031A3D6 /* AppDelegate.m in Sources */,
 				43AE1F131AE948C50031A3D6 /* TEST_ButtonViewController.m in Sources */,
+				435E79E71CA9556B004DE577 /* TEST_TwoViewController.m in Sources */,
 				435C9DDE1CA2E7EE008A1753 /* UIButton+LXMImagePosition.m in Sources */,
 				43AE1EEE1AE948630031A3D6 /* main.m in Sources */,
 			);

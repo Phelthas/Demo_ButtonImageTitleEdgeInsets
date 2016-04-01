@@ -68,12 +68,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
-    
-    
-}
 
 - (void)setupDefault {
     [self setupButton:self.originalButton_line];

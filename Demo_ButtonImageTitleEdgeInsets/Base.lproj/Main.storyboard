@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MrX-Lg-SVz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SKw-w7-JCP">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Button View Controller-->
@@ -108,13 +108,63 @@
             </objects>
             <point key="canvasLocation" x="-176" y="329"/>
         </scene>
+        <!--Two View Controller-->
+        <scene sceneID="lWf-7d-NGO">
+            <objects>
+                <viewController id="SKw-w7-JCP" customClass="TEST_TwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gyu-Bj-vkI"/>
+                        <viewControllerLayoutGuide type="bottom" id="fZg-y4-hjv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZPp-py-mba">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwg-Jn-7zP">
+                                <rect key="frame" x="93" y="76" width="135" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="表现不错赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOS-8L-Ddc">
+                                <rect key="frame" x="120" y="183" width="80" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4eQ-x1-UF2"/>
+                                    <constraint firstAttribute="height" constant="35" id="qt4-tC-RQD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="表现不错赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV2-dD-Ywt">
+                                <rect key="frame" x="93" y="495" width="135" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="表现不错赞一个" image="like">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fZg-y4-hjv" firstAttribute="top" secondItem="sOS-8L-Ddc" secondAttribute="bottom" constant="350" id="Iun-b5-baO"/>
+                            <constraint firstItem="sOS-8L-Ddc" firstAttribute="centerX" secondItem="ZPp-py-mba" secondAttribute="centerX" id="e7q-eT-7Ix"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dpn-rC-e0p"/>
+                    <connections>
+                        <outlet property="oneButton" destination="iwg-Jn-7zP" id="AK1-E5-6SV"/>
+                        <outlet property="threeButton" destination="IV2-dD-Ywt" id="wky-r1-Reu"/>
+                        <outlet property="twoButton" destination="sOS-8L-Ddc" id="ysA-SF-Lgo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUO-fi-w1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="329"/>
+        </scene>
     </scenes>
     <resources>
         <image name="like" width="30" height="30"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
