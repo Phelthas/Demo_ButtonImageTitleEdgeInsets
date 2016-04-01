@@ -91,8 +91,6 @@
     
     [self.fourButton_line_1 setImagePosition:LXMImagePositionBottom spacing:spacing];
     
-    
-    [self.originalButton setTitle:@"asdfasdfasdf" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
