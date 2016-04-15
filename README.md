@@ -12,12 +12,14 @@
 ## 支持 CocoaPods    
 现在可以用CocoaPods按安装了
 在你的podfile中添加    
-`pod 'LXMButtonImagePosition', '~> 1.1.0'`    
+`pod 'LXMButtonImagePosition', '~> 1.1.1'`    
 然后在需要用的地方引入头文件    
 `#import <UIButton+LXMImagePosition.h>`  
 
 
 ## Update
+1.1.1    
+将支持的最低系统改为iOS5.0；之前写的7.1是没必要的，这些属性5.0之前就可以用了。
 1.1.0     
 加入对contentInset的考虑，使button的intrinsicSize计算正确，更好的配合autoLayout
 
