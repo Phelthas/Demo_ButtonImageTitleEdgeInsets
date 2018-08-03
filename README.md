@@ -12,12 +12,15 @@
 ## 支持 CocoaPods    
 现在可以用CocoaPods按安装了
 在你的podfile中添加    
-`pod 'LXMButtonImagePosition', '~> 1.1.1'`    
+`pod 'LXMButtonImagePosition', '~> 1.2.0'`    
 然后在需要用的地方引入头文件    
 `#import <UIButton+LXMImagePosition.h>`  
 
 
 ## Update
+1.2.0    
+优化性能问题。    
+发现在tableView或者collectionView快速滑动时，如果cell中使用了这个方法，会稍微有点耗时。时间是消耗在计算文字宽高的地方，而这个大部分是无用的重复计算，所以现在用NSCache来缓存计算过的文字宽高。    
 1.1.1    
 将支持的最低系统改为iOS5.0；之前写的7.1是没必要的，这些属性5.0之前就可以用了。    
 1.1.0     
